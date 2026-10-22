@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Syria Prayer – Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Syria Prayer app. No accounts, no ads, no tracking, no data collected.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+  :root {
+    --forest-deep: #002623;
+    --forest: #054239;
+    --sage: #428177;
+    --wheat-dark: #988561;
+    --wheat: #B9A779;
+    --wheat-light: #EDEBE0;
+    --sand: #D9D3B4;
+
+    --bg: #F7F5EE;
+    --card: #FFFFFF;
+    --text: #13201E;
+    --muted: #4F5E5A;
+    --heading: #054239;
+    --accent: #988561;
+    --rule: #E3DFCF;
+    --chip: #EDEBE0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #001A18;
+      --card: #032E2A;
+      --text: #EDEBE0;
+      --muted: #B4BDB6;
+      --heading: #B9A779;
+      --accent: #B9A779;
+      --rule: #0D4640;
+      --chip: #0A3A35;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  html[lang="ar"] body {
+    font-family: "Segoe UI", "Geeza Pro", "Noto Naskh Arabic", "Noto Sans Arabic", Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.85;
+  }
+
+  /* Header: forest gradient with the app's pattern, like the app header. */
+  header {
+    position: relative;
+    overflow: hidden;
+    color: var(--wheat-light);
+    background: radial-gradient(120% 140% at 50% 20%, var(--forest) 0%, var(--forest-deep) 100%);
+    padding: 20px 16px 56px;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("pattern.png") center / 640px auto repeat;
+    opacity: .14;
+    -webkit-mask-image: radial-gradient(70% 90% at 50% 40%, #000 20%, transparent 100%);
+    mask-image: radial-gradient(70% 90% at 50% 40%, #000 20%, transparent 100%);
+    pointer-events: none;
+  }
+  .bar, .hero { position: relative; max-width: 760px; margin: 0 auto; }
+  .bar { display: flex; justify-content: flex-end; }
+
+  .switch {
+    display: inline-flex;
+    padding: 3px;
+    border-radius: 999px;
+    background: rgba(237, 235, 224, .12);
+    border: 1px solid rgba(185, 167, 121, .45);
+  }
+  .switch button {
+    appearance: none;
+    border: 0;
+    margin: 0;
+    min-width: 64px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--wheat-light);
+    font: inherit;
+    font-size: 15px;
+    line-height: 1.4;
+    cursor: pointer;
+  }
+  .switch button[aria-pressed="true"] {
+    background: var(--wheat);
+    color: var(--forest-deep);
+    font-weight: 600;
+  }
+  .switch button:focus-visible { outline: 2px solid var(--wheat-light); outline-offset: 2px; }
+
+  .hero { text-align: center; padding-top: 28px; }
+  .hero img {
+    width: 96px; height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  }
+  .hero h1 { margin: 18px 0 4px; font-size: 32px; line-height: 1.2; font-weight: 700; }
+  .hero p { margin: 0; color: var(--wheat); font-size: 17px; }
+
+  main { max-width: 760px; margin: -32px auto 0; padding: 0 16px 48px; position: relative; }
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 28px 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .06), 0 8px 24px rgba(0, 0, 0, .06);
+  }
+  .updated { color: var(--muted); font-size: 15px; margin: 0 0 16px; }
+  .summary {
+    background: var(--chip);
+    border-inline-start: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin: 0 0 8px;
+  }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; padding: 0; list-style: none; }
+  .pills li {
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    color: var(--muted);
+  }
+  h2 {
+    color: var(--heading);
+    font-size: 20px;
+    margin: 30px 0 8px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { margin: 0 0 10px; }
+  ul { padding-inline-start: 22px; margin: 0 0 10px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 8px 16px 32px; }
+
+  [data-lang] { display: none; }
+  html[lang="en"] [data-lang="en"], html[lang="ar"] [data-lang="ar"] { display: block; }
+  html[lang="en"] span[data-lang="en"], html[lang="ar"] span[data-lang="ar"] { display: inline; }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 26px; }
+    .card { padding: 22px 18px; border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="switch" role="group" aria-label="Language / اللغة">
+      <button type="button" data-set="en" aria-pressed="true" lang="en">English</button>
+      <button type="button" data-set="ar" aria-pressed="false" lang="ar">العربية</button>
+    </div>
+  </div>
+  <div class="hero">
+    <img src="icon.png" alt="" width="96" height="96">
+    <h1><span data-lang="en">Syria Prayer</span><span data-lang="ar">صلاة سوريا</span></h1>
+    <p><span data-lang="en">Privacy Policy</span><span data-lang="ar">سياسة الخصوصية</span></p>
+  </div>
+</header>
+
+<main>
+  <!-- English -->
+  <article class="card" data-lang="en" lang="en">
+    <p class="updated">Last updated: 22 October 2026</p>
+    <div class="summary">
+      <p><strong>In short: we do not collect, store or share any personal data.</strong>
+      Syria Prayer ("the app") is published by Level 7 Techs. Everything it does
+      happens on your device.</p>
+      <ul class="pills">
+        <li>No accounts</li><li>No ads</li><li>No analytics</li><li>No tracking</li>
+      </ul>
+    </div>
+
+    <h2>Location</h2>
+    <p>If you allow it, the app uses your location to calculate prayer times and
+    the Qibla direction. These calculations run entirely on your device, and
+    location is used only while the app is open, never in the background.</p>
+    <ul>
+      <li>Your location is saved only on your device, so the app works offline.</li>
+      <li>To show the name of your city, the app asks your phone's built-in
+        geocoding service (Apple on iOS, Google on Android) to turn your
+        coordinates into a place name. That request is handled by the operating
+        system under Apple's or Google's privacy policy. We never receive it.</li>
+      <li>You can skip GPS entirely and choose a city from the offline list.</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <p>Your settings (language, theme, calculation method, notification choices),
+    your selected location, adhkar progress and Tasbih counts are stored locally
+    on your device. They are never sent to us. Uninstalling the app deletes them.</p>
+
+    <h2>Notifications</h2>
+    <p>Prayer reminders are scheduled locally on your device. No server or push
+    service is involved.</p>
+
+    <h2>Widgets and watches</h2>
+    <p>Home screen widgets and the Apple Watch and Wear OS apps get the prayer
+    schedule directly from the app on your phone, through the operating
+    system's own channels. Nothing passes through our servers. We don't have
+    any.</p>
+
+    <h2>Contact us by email</h2>
+    <p>If you choose <em>Contact us</em> in Settings, your email app opens with a
+    pre-filled message that includes the app version, device model and language
+    to help with support. Nothing is sent unless you send that email yourself.
+    We use your email only to reply to you.</p>
+
+    <h2>Children</h2>
+    <p>The app is suitable for all ages and does not knowingly collect information
+    from anyone, including children.</p>
+
+    <h2>Third-party data</h2>
+    <p>City names come from <a href="https://www.geonames.org/">GeoNames</a>
+    (CC BY 4.0) and ship inside the app. No requests are made to GeoNames.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published on this page
+    with a new "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:level7techs@gmail.com">level7techs@gmail.com</a></p>
+  </article>
+
+  <!-- Arabic -->
+  <article class="card" data-lang="ar" lang="ar" dir="rtl">
+    <p class="updated">آخر تحديث: ٢٢ تشرين الأول ٢٠٢٦</p>
+    <div class="summary">
+      <p><strong>باختصار: لا نجمع أي بيانات شخصية ولا نخزنها ولا نشاركها.</strong>
+      تطبيق صلاة سوريا («التطبيق») من نشر Level 7 Techs، وكل ما يقوم به يجري على
+      جهازك.</p>
+      <ul class="pills">
+        <li>بلا حسابات</li><li>بلا إعلانات</li><li>بلا تحليلات</li><li>بلا تتبّع</li>
+      </ul>
+    </div>
+
+    <h2>الموقع</h2>
+    <p>إذا سمحت بذلك، يستخدم التطبيق موقعك لحساب مواقيت الصلاة واتجاه القبلة.
+    تجري هذه الحسابات بالكامل على جهازك، ويُستخدم الموقع فقط أثناء فتح التطبيق،
+    ولا يُستخدم في الخلفية أبدًا.</p>
+    <ul>
+      <li>يُحفظ موقعك على جهازك فقط، ليعمل التطبيق دون إنترنت.</li>
+      <li>لعرض اسم مدينتك، يطلب التطبيق من خدمة تحديد الأماكن المدمجة في هاتفك
+        (Apple على iOS وGoogle على Android) تحويل الإحداثيات إلى اسم مكان. يتولى
+        نظام التشغيل هذا الطلب وفق سياسة الخصوصية لدى Apple أو Google، ولا يصلنا
+        أبدًا.</li>
+      <li>يمكنك الاستغناء عن GPS تمامًا واختيار مدينتك من القائمة المتاحة دون إنترنت.</li>
+    </ul>
+
+    <h2>البيانات المحفوظة على جهازك</h2>
+    <p>تُحفظ إعداداتك (اللغة، والمظهر، وطريقة الحساب، وخيارات التنبيهات)، والموقع
+    الذي اخترته، وتقدّمك في الأذكار، وعدّاد المسبحة، على جهازك فقط. لا تُرسل إلينا
+    أبدًا، وتُحذف عند إزالة التطبيق.</p>
+
+    <h2>التنبيهات</h2>
+    <p>تُجدول تنبيهات الصلاة على جهازك مباشرة، دون أي خادم أو خدمة إشعارات خارجية.</p>
+
+    <h2>الودجات والساعات الذكية</h2>
+    <p>تحصل ودجات الشاشة الرئيسية وتطبيقا Apple Watch وWear OS على مواقيت الصلاة
+    مباشرة من التطبيق على هاتفك، عبر قنوات نظام التشغيل نفسه. لا يمر شيء عبر
+    خوادمنا، فليس لدينا أي خوادم.</p>
+
+    <h2>التواصل عبر البريد الإلكتروني</h2>
+    <p>عند اختيار <em>تواصل معنا</em> من الإعدادات، يُفتح تطبيق البريد لديك برسالة
+    جاهزة تتضمن إصدار التطبيق وطراز الجهاز واللغة للمساعدة في الدعم. لا يُرسل شيء
+    ما لم ترسل الرسالة بنفسك، ونستخدم بريدك فقط للرد عليك.</p>
+
+    <h2>الأطفال</h2>
+    <p>التطبيق مناسب لجميع الأعمار، ولا يجمع عن قصد أي معلومات من أي شخص، بما في ذلك
+    الأطفال.</p>
+
+    <h2>بيانات من جهات خارجية</h2>
+    <p>أسماء المدن مأخوذة من <a href="https://www.geonames.org/">GeoNames</a>
+    (بترخيص CC BY 4.0) ومضمّنة داخل التطبيق، ولا يتصل التطبيق بـ GeoNames.</p>
+
+    <h2>التغييرات</h2>
+    <p>إذا تغيّرت هذه السياسة، ستُنشر النسخة الجديدة في هذه الصفحة مع تاريخ تحديث جديد.</p>
+
+    <h2>اتصل بنا</h2>
+    <p><a href="mailto:level7techs@gmail.com" dir="ltr">level7techs@gmail.com</a></p>
+  </article>
+</main>
+
+<footer>
+  <span data-lang="en">© 2026 Level 7 Techs · Syria Prayer</span>
+  <span data-lang="ar">© ٢٠٢٦ Level 7 Techs · صلاة سوريا</span>
+</footer>
+
+<script>
+  (function () {
+    var html = document.documentElement;
+    var titles = { en: 'Syria Prayer – Privacy Policy', ar: 'صلاة سوريا – سياسة الخصوصية' };
+
+    function apply(lang) {
+      html.lang = lang;
+      html.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.title = titles[lang];
+      document.querySelectorAll('.switch button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.set === lang));
+      });
+    }
+
+    // ?lang=ar (for the Arabic store listing) > saved choice > browser language.
+    var param = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var lang = param || saved || ((navigator.language || 'en').slice(0, 2) === 'ar' ? 'ar' : 'en');
+    apply(lang === 'ar' ? 'ar' : 'en');
+
+    document.querySelectorAll('.switch button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.set);
+        try { localStorage.setItem('lang', b.dataset.set); } catch (e) {}
+      });
+    });
+  })();
+</script>
+</body>
+</html>
